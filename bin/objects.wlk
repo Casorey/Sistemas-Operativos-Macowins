@@ -40,8 +40,12 @@ class PrendaLiquidacion inherits Oferta{
 class Venta{
 	var listaPrendasAdquiridas
 	var metodoPago
+	var fechaCompra
 	
-	
+	method verificarFecha(unaFecha){
+		
+	return fechaCompra == unaFecha
+	}
 	method valorFinal(){
 		return metodoPago.valorFinal(listaPrendasAdquiridas)
 	}
@@ -67,7 +71,7 @@ class Efectivo inherits MetodoPago{
 	return listaPrendasAdquiridas.foldl{unaPrenda => unaPrenda.precio()}
 	}
 }
-/*
+
 class Tarjeta inherits MetodoPago{
 	var cantidadCuotas
 	var coeficienteFijo
@@ -80,19 +84,23 @@ class Tarjeta inherits MetodoPago{
 		var unValorSinRegargo = listaPrendasAdquiridas.foldl{unaPrenda => unaPrenda.precio()}
 			
 		
-		return recargo(unValorSinRegargo) //se que esta mal escrito pero no receurdo como se hace bien la idea es aplicar el recargo a un
-		valor especifico que devolviera el fold 
+		return self.recargo(unValorSinRegargo) 
 		
 	
 }
 
 }
-*/
+
 class Macowins{
 	var listaVentas
 	
-	method gananciaVentas(){
-		return listaVentas.foldl{unaVenta => unaVenta.valorFinal()}
+	method ventasDeUnDiaEspecifico(unDia){
+		return listaVentas.filter{unaVenta => unaVenta.verificarFecha(unDia)}
+	}
+	
+	method gananciaVentasDeUnDiaEspecifico(unDia){
+		var listaVentasDiaEspecifico = listaVentas.ventasDeUnDiaEspecifico(unDia)
+		return listaVentasDiaEspecifico.foldl{unaVenta => unaVenta.valorFinal()}
 	}
 }
 
