@@ -1100,7 +1100,24 @@
 											"top": 101,
 											"width": 223,
 											"height": 13,
-											"text": "+gananciaVentas()",
+											"text": "+gananciaVentasDeUnDiaEspecifico()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGAARxh7/uzf44=",
+											"_parent": {
+												"$ref": "AAAAAAGAACzFQkq1jsg="
+											},
+											"model": {
+												"$ref": "AAAAAAGAARxh5/uw8y8="
+											},
+											"font": "Arial;13;0",
+											"left": 69,
+											"top": 116,
+											"width": 223,
+											"height": 13,
+											"text": "+ventasDeUnDiaEspecifico()",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1108,7 +1125,7 @@
 									"left": 64,
 									"top": 96,
 									"width": 233,
-									"height": 23
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -2082,13 +2099,30 @@
 											"height": 13,
 											"text": "+metodoPago",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGAARqzxPjHPS8=",
+											"_parent": {
+												"$ref": "AAAAAAGAAJta9FXmX7M="
+											},
+											"model": {
+												"$ref": "AAAAAAGAARqztPjBS4Y="
+											},
+											"font": "Arial;13;0",
+											"left": 69,
+											"top": 332,
+											"width": 231,
+											"height": 13,
+											"text": "+fecha",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 64,
 									"top": 297,
 									"width": 241,
-									"height": 38
+									"height": 53
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -2111,7 +2145,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 69,
-											"top": 340,
+											"top": 355,
 											"width": 231,
 											"height": 13,
 											"text": "+valorFinal()",
@@ -2128,7 +2162,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 69,
-											"top": 355,
+											"top": 370,
 											"width": 231,
 											"height": 13,
 											"text": "+agregarPrendaACompra()",
@@ -2137,7 +2171,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 64,
-									"top": 335,
+									"top": 350,
 									"width": 241,
 									"height": 38
 								},
@@ -4268,7 +4302,15 @@
 							"_parent": {
 								"$ref": "AAAAAAGAACzFQUqs9o0="
 							},
-							"name": "gananciaVentas"
+							"name": "gananciaVentasDeUnDiaEspecifico"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGAARxh5/uw8y8=",
+							"_parent": {
+								"$ref": "AAAAAAGAACzFQUqs9o0="
+							},
+							"name": "ventasDeUnDiaEspecifico"
 						}
 					]
 				},
@@ -4525,6 +4567,14 @@
 							},
 							"name": "metodoPago",
 							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGAARqztPjBS4Y=",
+							"_parent": {
+								"$ref": "AAAAAAGAAJta9FXenxQ="
+							},
+							"name": "fecha"
 						}
 					],
 					"operations": [
