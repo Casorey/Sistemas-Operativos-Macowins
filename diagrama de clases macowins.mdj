@@ -2167,13 +2167,30 @@
 											"height": 13,
 											"text": "+agregarPrendaACompra()",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGAASeLlKWAHvs=",
+											"_parent": {
+												"$ref": "AAAAAAGAAJta9FXn61E="
+											},
+											"model": {
+												"$ref": "AAAAAAGAASeLgaV6PvA="
+											},
+											"font": "Arial;13;0",
+											"left": 69,
+											"top": 385,
+											"width": 231,
+											"height": 13,
+											"text": "+verificarFecha(unaFecha)",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 64,
 									"top": 350,
 									"width": 241,
-									"height": 38
+									"height": 53
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -4574,7 +4591,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGAAJta9FXenxQ="
 							},
-							"name": "fecha"
+							"name": "fecha",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -4593,6 +4611,25 @@
 								"$ref": "AAAAAAGAAJta9FXenxQ="
 							},
 							"name": "agregarPrendaACompra"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGAASeLgaV6PvA=",
+							"_parent": {
+								"$ref": "AAAAAAGAAJta9FXenxQ="
+							},
+							"name": "verificarFecha",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGAASe5NaYp714=",
+									"_parent": {
+										"$ref": "AAAAAAGAASeLgaV6PvA="
+									},
+									"name": "unaFecha",
+									"type": ""
+								}
+							]
 						}
 					]
 				},
